@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Movimentos</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/movimento.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<nav>
+    <div class="logo">
+        <img src="img/FinancasFacil.svg" alt="Logo">
+    </div>
+    <ul class="menu">
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="movimento.html">Movimentos</a></li>
+    </ul>
+</nav>
+
+<form class="form">
+    <h1>Cadastro de Movimentos</h1>
+    <div class="form-group">
+        <label for="descricao">Descrição:</label>
+        <input type="text" id="descricao" name="descricao" placeholder="Informe a descrição" required>
+    </div>
+    <div class="form-group">
+        <label for="tipo">Tipo:</label>
+        <div class="radio-group">
+            <label>
+                <input type="radio" name="tipo" value="receita" required> Receita
+            </label>
+            <label>
+                <input type="radio" name="tipo" value="despesa" required> Despesa
+            </label>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="data-vencimento">Data de Vencimento:</label>
+        <input type="date" id="data-vencimento" name="data-vencimento" required>
+    </div>
+    <div class="form-group">
+        <label for="valor">Valor:</label>
+        <input type="number" id="valor" name="valor" step="0.01" min="0" placeholder="Informe o valor" required>
+    </div>
+    <div class="form-group">
+        <label for="observacao">Observação:</label>
+        <textarea id="observacao" name="observacao" placeholder="Informe a observação"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="quitado">Quitado:</label>
+        <input type="checkbox" id="quitado" name="quitado">
+    </div>
+    <button type="submit">Salvar</button>
+</form>
+
+</body>
+</html>
