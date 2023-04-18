@@ -29,7 +29,22 @@
         <input type="text" id="descricao" name="descricao" placeholder="Informe a descrição" required>
     </div>
     <div class="form-group">
-        <label for="tipo">Tipo:</label>
+        <label for="categoria">Categoria:</label>
+        <div class="select-group">
+            <select id="categoria" name="categoria" required>
+                <option value="">Selecione uma categoria</option>
+                <option value="alimentacao">Alimentação</option>
+                <option value="transporte">Transporte</option>
+                <option value="moradia">Moradia</option>
+                <option value="saude">Saúde</option>
+                <option value="educacao">Educação</option>
+                <option value="entretenimento">Entretenimento</option>
+            </select>
+        </div>
+        <button class="nova-categoria" type="button">Nova Categoria</button>
+    </div>
+    <div class="form-group">
+        <label>Tipo:</label>
         <div class="radio-group">
             <label>
                 <input type="radio" name="tipo" value="receita" required> Receita
